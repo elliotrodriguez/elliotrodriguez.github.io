@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bin2Dec</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./bin2dec.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="./bin2dec.js" async defer></script>
+        <div class="main">
+            <div class="title"><h1>Bin2Dec</h1>
+            <h2>A binary to decimal number converter</h2></div>
+            <div class="content">
+        <p>Enter a binary number (only 0s and 1s).<br>
+             Then, click "Convert" for its decimal (base 10) equivalent:
+        <input type="text" id="binEntry" maxlength="8" placeholder="Enter up to 8 digits"  onkeypress="validateInput(event)" />
+        <button class="button" onClick="convertToDec(binEntry.value)">Convert</button></p>
+        <div id="decResult"></div>
+        </div>
+        <div><a href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md" target="_blank">Tier 1 app idea from florinpop17</a></div>
+    </div>
+    </body>
+</html>
